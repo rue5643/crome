@@ -16,6 +16,17 @@ const getNowDate=()=>{
 
 const setNowDate=(month,date,day)=>{
   dateElement.textContent=`${month}월 ${date}일 ${day}`; 
-}   
+}
 
+const getNowTime=()=>{
+  const nowDate=new Date();
+  let hour= modifyNumber(nowDate.getHours());
+  let minute=modifyNumber(nowDate.getMinutes()) ;
+  setNowTime(hour, minute);
+}
+
+const setNowTime=(hour, minute)=>{
+  timeElement.textContent=`${hour} : ${minute}`;
+}
 getNowDate();
+getNowTime();
