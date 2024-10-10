@@ -28,5 +28,6 @@ const getNowTime=()=>{
 const setNowTime=(hour, minute)=>{
   timeElement.textContent=`${hour} : ${minute}`;
 }
+
 getNowDate();
 getNowTime();
