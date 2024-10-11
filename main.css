@@ -19,3 +19,16 @@ main-container{
   height: 100vh;
 }
 
+.main-container .main-wrapper{
+  text-align: center;
+}
+
+.main-wrapper .date {
+28    font-size: var(--large);
+29    font-weight: 400;
+30}
+31.main-wrapper .time {
+32    font-size: var(--xlarge);
+33    font-weight: 400;
+34    margin-top: -35px;
+35}
