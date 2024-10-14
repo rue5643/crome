@@ -6,27 +6,20 @@
     --xsmall: 14px;
 }
 
-html, body {
-    height: 100%;  /* 부모 요소의 높이 설정 */
-    margin: 0;     /* 불필요한 여백 제거 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
-    width: 100%;  /* 100% 너비 설정 */
+    margin: 0 auto;
+    width: 100%;
     font-family: "Noto Sans KR", sans-serif;
 }
 
-.main-container {
+.main-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;  /* 부모 높이에 맞게 설정 */
+    height: 100%;
 }
 
-.main-wrapper {
+.main-container .main-wrapper{
     text-align: center;
 }
 
@@ -35,7 +28,6 @@ body {
     font-size: var(--large);
     font-weight: 400;
 }
-
 .main-wrapper .time {
     font-size: var(--xlarge);
     font-weight: 400;
