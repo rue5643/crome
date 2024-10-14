@@ -34,6 +34,7 @@ body {
 .main-wrapper .date {
     font-size: var(--large);
     font-weight: 400;
+    align-items: cneter;
 }
 
 .main-wrapper .time {
