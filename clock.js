@@ -11,6 +11,7 @@ const getNowDate = () => {
 		let month = modifyNumber(nowDate.getMonth() + 1);
 		let date = modifyNumber(nowDate.getDate());
 		let day = week[nowDate.getDay()];
+		console.log(day);
 		setNowDate(month, date, day);
 };
 
