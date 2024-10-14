@@ -2,17 +2,16 @@ const searchInput = document.getElementById("search-input");
 
 const showSearchResult = () => {
     let searchWord = searchInput.value;
-    window.location.href = `https://google.com/search?q=${searchWord}`;
-    searchWord = "";
+    if (searchWord) {  // 검색어가 있을 경우만 실행
+        window.location.href = `https://google.com/search?q=${searchWord}`;
+    }
 };
 
 const enterKey = (event) => {
-    if (event.code === "Enter") {
+    if (event.key === "Enter") {  // event.code 대신 event.key 사용
         showSearchResult();
     }
 };
 
-// `keypress` 대신 `keydown`을 사용
-searchInput.addEventListener("keydown", (event) => {
-    enterKey(event);
-});
+// keydown 이벤트 사용
+searchInput.addEventListener("keydown", enterKey);
