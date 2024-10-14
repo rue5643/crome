@@ -7,26 +7,26 @@
 }
 
 html, body {
-    height: 100%;  /* body와 html의 높이를 100%로 설정 */
-    margin: 0;
-    padding: 0;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-body {
+    height: 100%;  /* 부모 요소의 높이 설정 */
+    margin: 0;     /* 불필요한 여백 제거 */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    width: 100%;  /* 100% 너비 설정 */
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;  /* 부모 높이에 맞게 설정 */
 }
 
-.main-container .main-wrapper {
+.main-wrapper {
     text-align: center;
 }
 
