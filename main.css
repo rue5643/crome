@@ -26,15 +26,26 @@ body {
     height: 100%; /* 부모 요소의 높이에 맞춤 */
 }
 
-.main-container .main-wrapper {
+.main-container {
+    display:flex;
     text-align: center;
+    align-item:center;
+    height: 100%;
+}
+
+.main-wrapper{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
 }
 
 /* 시계 */
 .main-wrapper .date {
     font-size: var(--large);
     font-weight: 400;
-    align-items: center;
+    margin-bottom:10px;
 }
 
 .main-wrapper .time {
