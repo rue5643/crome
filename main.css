@@ -100,3 +100,16 @@ body {
     padding: 10px 30px;
     color: white;
 }
+
+.bookmark-close {
+    width: 240px;
+    padding: 15px 30px;
+    font-size: var(--xsmall);
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
